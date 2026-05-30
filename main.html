@@ -8,8 +8,18 @@
 </head>
 <body>
     <script src="clicker.js"></script>
+    <div id = "mainWindow">
     <input id = "countNum" class = "counting"  disabled type="text" value="0">
-    <button class="count" onclick="add()">'돈벌기'</button>
+    <button class="count" onclick="add()">돈벌기</button>
+    <button class="shop" onclick="shop()">상점<button>
+    </div>
+
     
+
+    <div id = "shopWindow" class = "shop-window">
+        <h2>상점</h2>
+        <p>여기에 아이템들을 추가할 수 있습니다.</p>
+        <button class="close-btn" onclick="closeShop()">닫기</button>
+    </div>
 </body>
 </html>

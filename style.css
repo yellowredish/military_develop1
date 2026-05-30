@@ -28,7 +28,7 @@ body {
 .count {
     position: absolute;
     top: 60%;      /* 화면 높이의 60% 지점 (50%가 정중앙이므로 살짝 아래) */
-    left: 50%;     /* 화면 너비의 50% 지점 */
+    left: 30%;     /* 화면 너비의 50% 지점 */
     transform: translate(-50%, -50%); /* 버튼 자체의 중심을 맞춰주는 마법의 코드 */
     
     /* 버튼 예쁘게 꾸미기 (선택사항) */
@@ -43,7 +43,47 @@ body {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
+
 /* 버튼 위에 마우스 올렸을 때 효과 */
 .count:hover {
     background-color: #45a049;
+}
+
+.shop {
+    position: absolute;
+    top: 60%;      /* 화면 높이의 60% 지점 (50%가 정중앙이므로 살짝 아래) */
+    left: 50%;     /* 화면 너비의 50% 지점 */
+    transform: translate(-50%, -50%); /* 버튼 자체의 중심을 맞춰주는 마법의 코드 */
+    
+    /* 버튼 예쁘게 꾸미기 (선택사항) */
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #4CAF50; /* 초록색 버튼 */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.shop:hover {
+    background-color: #45a049;
+}
+
+.shop-window {
+    display: none; /* 처음에는 화면에 보이지 않게 설정 */
+    position: fixed; /* 스크롤해도 제자리에 있도록 설정 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 정확히 화면 중앙에 배치 */
+    
+    /* 예쁘게 꾸미기 */
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    text-align: center;
+    z-index: 100; /* 다른 버튼들보다 항상 위로 올라오게 설정 */
 }
